@@ -13,40 +13,39 @@ html {
     right: 0;
     background-color:rgb(99, 99, 99);
 }
-
-a.active:hover{
-    font-style: italic;
-}
   
 .header a {
-    float:none;
+    float: none;
     color: black;
     padding: 12px;
-    text-decoration: none;
     font-size: 18px;
+    text-decoration: none;
     line-height: 25px;
     border-radius: 4px;
     font-family: 'Raleway', sans-serif;
 }
 
-.header a:hover {
-    /*background-color: rgb(255, 255, 255);*/
-    background-color: rgb(158, 162, 158);
-    color: black;
-  }
-
-.header a.active {
+.header a.navbutton {
     background-color: rgb(158, 162, 158);
     color: white;
     margin: 5px;
-  }
+}
 
 .header-right {
     float: right;
-  }
+}
 
-.header-left{
-    float: inline-start;
+a.navbutton:hover{
+    font-style: italic;
+}
+
+.header a.initials {
+    font-size: 26px;
+    background-color: rgb(169, 165, 249);
+}
+
+.header a.initials:hover{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
@@ -58,7 +57,7 @@ a.active:hover{
     .header-right {
       float: none;
     }
-  }
+}
 
 .flexbox-container {
     display: flex;
@@ -71,23 +70,12 @@ a.active:hover{
 .flexbox-item {
     padding: 5px;
     margin: 5px;
+    min-width: 900px;
+    min-height: 600px;
     background-color: rgba(157, 207, 238, 0.94);
 }
 
-/*.flexbox-item-1 {
-    min-height: 80px;
-    min-width: 1200px;
-    border-radius: 25px;
-    border: 2px double #2d2c2c;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.934);
-    position: relative;
-    padding-top: 60px;
-}*/
-
 .flexbox-item-2 {
-    min-width: 900px;
-    min-height: 600px;
     text-align: center;
     border-radius: 25px;
     border: 3px solid #ffffff;
@@ -95,11 +83,10 @@ a.active:hover{
     top:80px;
 }
 
-.me {
+.description {
     display: block;
     max-height: 100px;
     max-width: 900px;
-    /*border: 2px solid grey;*/
     align-content: center;
     justify-content: center;
 }
@@ -107,7 +94,7 @@ a.active:hover{
 img.round-corners {
     border-radius: 30px;
     border: 1px solid white;
-  }
+}
 
 a.resume:hover {
     background-color: rgb(255, 255, 255);
@@ -116,19 +103,14 @@ a.resume:hover {
 }
 
 .flexbox-item-3 {
-    min-width: 900px;
-    min-height: 600px;
     border-radius: 25px;
     border: 3px solid #ffffff;
     text-align: center;
     align-content: center;
-    /*background-color: rgb(244, 244, 168);*/
     background-color: rgb(202, 233, 192);
 }
 
 /*.flexbox-item-4 {
-    min-width: 900px;
-    min-height: 600px;
     border-radius: 25px;
     border: 3px solid #ffffff;
     text-align: center;
@@ -136,8 +118,6 @@ a.resume:hover {
 } styling for photos box, to be added later*/
 
 .flexbox-item-5 {
-    min-width: 900px;
-    min-height: 600px;
     border-radius: 25px;
     border: 3px solid #ffffff;
     text-align: center;
@@ -147,4 +127,16 @@ a.resume:hover {
 body {
     background-color: #3c3c3c;
     padding-top: 60px;
-  }
+}
+
+.footer {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3c3c3c;
+}
